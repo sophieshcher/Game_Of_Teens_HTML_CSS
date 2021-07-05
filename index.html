@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./button.js"> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
@@ -18,28 +19,40 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
       rel="stylesheet"
     />
+
     <title>GoITeens Web Studio</title>
+
   </head>
   <body>
     <header class="header">
-      <h1 class="logo"><a href="index.html">GoITeens web Studio</a></h1>
+      <h1 class="logo"><a class="tracking-in-expand" href="index.html">GoITeens web Studio</a></h1>
       <nav class="navigation">
         <button class="menu_btn">
           <img src="./img/menu.svg" alt="button" />
         </button>
         <ul class="menu">
-          <li class="menu_item"><a href="#tet">Чому ви оберете нас?</a></li>
-          <li class="menu_item"><a href="#rer">Наші роботи</a></li>
-          <li class="menu_item"><a href="#kek">Відгуки</a></li>
-          <li class="menu_item"><a href="#ded">Ціни</a></li>
-          <li class="menu_item"><a href="#wew">Як з нами зв'язатися</a></li>
+          <li class="menu_item">
+            <a class="scroll" href="#tet">Чому ви оберете нас?</a>
+          </li>
+          <li class="menu_item">
+            <a class="scroll" href="#rer">Наші роботи</a>
+          </li>
+          <li class="menu_item">
+            <a class="scroll" href="#kek">Відгуки</a>
+          </li>
+          <li class="menu_item">
+            <a class="scroll" href="#ded">Ціни</a>
+          </li>
+          <li class="menu_item">
+            <a class="scroll" href="#wew">Як з нами зв'язатися</a>
+          </li>
         </ul>
         <button class="btn">sign up</button>
       </nav>
     </header>
     <section class="tour">
       <div class="tour_text_wrapper">
-        <h2 class="tour_title">GoITeens Web Studio</h2>
+        <h2 class=".tracking-in-contract-bck-bottom">GoITeens Web Studio</h2>
         <h4>Ми створюємо вебсайти швидкo і продуктивно</h4>
         <button class="btn">lern more</button>
       </div>
@@ -85,12 +98,13 @@
       </div>
     </section>
 
-    <section id="ded" class="reviews">
+    <section id="kek" class="reviews">
       <h2>Відгуки про нашу роботу</h2>
       <p>Нашими послугами скористалося більше ніж 10,000 клієнтів</p>
       <div class="div_review">
         <!-- <button class="btn_review one"></button> -->
         <div class="card_review uno">
+          <div class="before_img"></div>
           <p class="card_review_text">
             Нам сподобався Ваш креативний, але водночас раціональний підхід до
             завдання, вміння вислухати клієнта і зрозуміти потреби цільової
@@ -102,6 +116,7 @@
           <p class="autors">Команда Оptima Рlaza</p>
         </div>
         <div class="card_review dos">
+          <div class="before_img"></div>
           <p class="card_review_text">
             Дякуємо GoITeens Web Studio за створення сайту приватній підготовчій
             школі "Горішок". Сучасний яскравий дизайн, чітка оптимально
@@ -112,6 +127,7 @@
           <p class="autors">Приватна школа Горішок</p>
         </div>
         <div class="card_review tres">
+          <div class="before_img"></div>
           <p class="card_review_text">
             Висловлюємо подяку дизайн студії GoITeens Web Studio за професійне ставлення та творчий підхід, проявлені до створення нового сайту panorama-hotel.com.ua
 Роботи були проведені якісно та в обумовлені терміни. Сподіваємося на подальшу плідну співпрацю.
@@ -121,7 +137,7 @@
         <!-- <button class="btn_review two"></button> -->
       </div>
     </section>
-    <section id="kek" class="price">
+    <section id="ded" class="price">
       <h2>Ціни</h2>
       <p>Кожна робота оцінюється окремо</p>
       <div class="price_card">
@@ -130,7 +146,7 @@
         <div class="price_bord">
           <p>Від 13 000 грн</p>
           <span>*приблизна ціна</span>
-          <button>Замовити</button>
+          <button class="btn">Замовити</button>
         </div>
       </div>
       <div class="price_card">
@@ -139,7 +155,7 @@
         <div class="price_bord">
           <p>Від 18 000 грн</p>
           <span>*приблизна ціна</span>
-          <button>Замовити</button>
+          <button class="btn">Замовити</button>
         </div>
       </div>
       <div class="price_card">
@@ -148,7 +164,7 @@
         <div class="price_bord">
           <p>Від 20 000 грн</p>
           <span>*приблизна ціна</span>
-          <button>Замовити</button>
+          <button class="btn">Замовити</button>
         </div>
       </div>
     </section>
@@ -185,7 +201,7 @@
             placeholder="Ваше повідомлення"
           >
           </textarea>
-          <input type="submit" class="btn_input" value="Відіслати" />
+          <input type="submit" class="btn btn_input" value="Відіслати" />
         </form>
       </div>
     </section>
