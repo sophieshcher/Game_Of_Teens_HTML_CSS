@@ -63,10 +63,13 @@ $yellow: #fad961;
 }
 
 // orange btn
-
+    .btn {
+        transition: 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 400ms;
+    }
     .btn:hover {
         -webkit-animation: btn 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both 400ms;
                 animation: btn 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both 400ms;
+            
     }
 
 
@@ -78,6 +81,9 @@ $yellow: #fad961;
   display: flex;
   justify-content: space-between;
   position: relative;
+  @media (min-width: 768px) {
+      padding: 12px 30px;
+  }
 }
 
 .navigation {
@@ -90,6 +96,9 @@ $yellow: #fad961;
   flex-direction: row-reverse;
   align-items: center;
   width: 45%;
+  @media (min-width: 768px) {
+    width: 30%;
+  }
 }
 
 .logo {
@@ -98,13 +107,10 @@ $yellow: #fad961;
   text-transform: capitalize;
   color: #333;
   width: 35%;
-
-  // @media (min-width: 768px) {
-  //   font-size: 35px;
-  // }
-  // @media (min-width: 1024px) {
-  //   font-size: 40px;
-  // }
+  @media (min-width: 768px) {
+    font-size: 25px;
+    width: 40%;
+}
 }
 
  
@@ -191,6 +197,9 @@ $yellow: #fad961;
   width: 100vw;
   border-bottom: 2px solid #e9ecf2;
   padding: 30px 10px 60px;
+  @media (min-width: 768px) {
+    padding: 50px 10px 60px;
+  }
 }
 
 .tour_text_wrapper {
@@ -232,11 +241,19 @@ $yellow: #fad961;
 
 .card_benefit_wrapper {
   padding: 40px 5px;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .card_benefit {
   width: 80%;
   margin: 0 auto 30px;
+  @media (min-width: 768px) {
+    width: 46%;
+    margin: 0 auto 30px;
+  }
   div {
     background-color: $orange;
     width: 80px;
@@ -277,7 +294,10 @@ $yellow: #fad961;
   padding: 40px 10px;
   border-bottom: 2px solid #e9ecf2;
   border-top: 2px solid #e9ecf2;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   h2 {
     @include titlesH2();
     margin-bottom: 30px;
@@ -286,9 +306,8 @@ $yellow: #fad961;
 
 .video_wraper {
   width: 95%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
+//   margin: 0 auto;
+
 }
 
 .reviews {
@@ -303,7 +322,10 @@ $yellow: #fad961;
 }
 
 .div_review {
-
+  @media (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+  }
 }
 
 .card_review {
@@ -315,11 +337,13 @@ $yellow: #fad961;
   border-radius: 40px;
   margin: 0 auto 60px;
  box-shadow: #eaeaec 2px 2px 4px;
-  transition: 400ms cubic-bezier(.28,.67,1,1.05) 400ms;
+  transition: 300ms cubic-bezier(.28,.67,1,1.05) 300ms;
   &:hover {
     transform: translateY(10px) scale(1.05);
- 
   }
+  @media (min-width: 768px) {
+    width: 45%;
+}
   .before_img {
         background: #fff;
         display: block;
@@ -337,6 +361,9 @@ $yellow: #fad961;
         &::before {
             content: url(../img/group.svg);
       }
+  }
+  .card_review:last-child {
+      margin-bottom: 0px;
   }
   .card_review_text {
     font-size: 13px;
@@ -386,6 +413,13 @@ $yellow: #fad961;
   }
 }
 
+.price_wrap {
+    @media (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
 .price_card {
   width: 80%;
   background: transparent;
@@ -393,6 +427,9 @@ $yellow: #fad961;
   border: solid 6px #ebf0fa;
   margin: 0 auto;
   margin-top: 30px;
+  @media (min-width: 768px) {
+    width: 45%;
+}
   h3 {
     @include titlesH3();
     margin-bottom: 20px;
@@ -437,20 +474,55 @@ $yellow: #fad961;
 .get_in_touch {
   padding: 30px 15px;
   border-bottom: 2px solid #ebf0fa;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.get_in_touch_text {
+    padding-left: 15px;
+}
+  
   h2 {
     @include titlesH2();
+    @media (min-width: 768px) {
+        font-size: 25px;
+        text-align: left;
+    }
   }
-  p {
+  .text_in_touch {
     font-size: 15px;
     color: #444;
     font-family: "Roboto", sans-serif;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    &::after {
+        content: '';
+        display: block;
+        background: #ebf0fa;
+        width: 100px;
+        height: 2px;
+        margin: 15px 0px 0px;
+    }
+    @media (min-width: 768px) {
+        font-size: 16px;
+        text-align: left;
+    }
   }
+}
+
+.get_in_touch_text {
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .span_wrapper {
   padding-left: 20px;
+  @media (min-width: 768px) {
+    padding-left: 0px;
+}
   p {
     font-size: 15px;
     color: #666;
@@ -459,6 +531,7 @@ $yellow: #fad961;
     text-align: left;
     display: flex;
     align-items: center;
+    padding: 10px 0px;
   }
   .telephone::before {
     content: url(../img/call.svg);
@@ -477,7 +550,7 @@ $yellow: #fad961;
 .form {
   width: 95%;
   .input-2 {
-    width: 357px;
+    width: 100%;
     background-color: transparent;
     border: 2px solid #e9ecf2;
     padding: 10px;
@@ -485,6 +558,9 @@ $yellow: #fad961;
     font-weight: 500;
     color: #333;
     margin-bottom: 15px;
+    @media (min-width: 768px) {
+    height: 150px;
+    }
   }
   .btn_input {
     background: $orange;
@@ -497,6 +573,7 @@ $yellow: #fad961;
     font-weight: 700;
     font-family: "Montserrat", sans-serif;
     box-shadow: 1px 1px 3px #555;
+    
   }
 }
 
@@ -522,17 +599,24 @@ $yellow: #fad961;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (min-width: 768px) {
+    padding: 15px 25px;
+}
   .first_span {
     font-family: "Poppins", sans-serif;
     font-size: 17px;
     text-transform: capitalize;
     color: #fff;
+    @media (min-width: 768px) {
+        font-size: 20px; 
+    }
   }
   .second_span {
     font-family: "Roboto", sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     font-style: italic;
     color: #fff;
+    
   }
 }
 
