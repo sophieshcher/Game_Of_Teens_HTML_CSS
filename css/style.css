@@ -20,8 +20,8 @@ li {
 }
 
 .btn:hover {
-  -webkit-animation: btn 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: btn 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: btn 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 400ms;
+  animation: btn 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 400ms;
 }
 
 .header {
@@ -490,6 +490,7 @@ li {
 
 .price_card .price_bord:hover {
   background: #e9ecf2;
+  border-radius: 0 0 6px 6px;
 }
 
 .price_card .price_bord span {
@@ -510,7 +511,7 @@ li {
   font-family: "Montserrat", sans-serif;
   -webkit-box-shadow: 1px 1px 5px #cfcbcb;
           box-shadow: 1px 1px 5px #cfcbcb;
-  margin: 10px auto 0;
+  margin: 15px auto 0;
   display: block;
 }
 

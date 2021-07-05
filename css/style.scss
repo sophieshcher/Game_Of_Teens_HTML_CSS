@@ -65,8 +65,8 @@ $yellow: #fad961;
 // orange btn
 
     .btn:hover {
-        -webkit-animation: btn 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                animation: btn 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        -webkit-animation: btn 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both 400ms;
+                animation: btn 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both 400ms;
     }
 
 
@@ -419,6 +419,7 @@ $yellow: #fad961;
     }
     &:hover {
       background: #e9ecf2;
+      border-radius: 0 0 6px 6px;
     }
     span {
       font-size: 12px;
@@ -427,7 +428,7 @@ $yellow: #fad961;
     }
     button {
       @include authButton();
-      margin: 10px auto 0;
+      margin: 15px auto 0;
       display: block;
     }
   }
